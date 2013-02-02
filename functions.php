@@ -136,9 +136,15 @@ function shortcode_columnize_right( $atts, $content = null ) {
 	$content = '<div class="four columns">' . $content . '</div>';
 	return $content;
 }
+function shortcode_columnize_doublecol( $atts, $content = null ) {
+	$content = wptexturize( $content );
+	$content = wpautop( $content, false );
+	$content = '<div class="eight columns">' . $content . '</div>';
+	return $content;
+}
 add_shortcode( 'leftcol', 'shortcode_columnize_left' );
 add_shortcode( 'midcol', 'shortcode_columnize_middle' );
 add_shortcode( 'rightcol', 'shortcode_columnize_right' );
-
+add_shortcode( 'doublecol', 'shortcode_columnize_doublecol' );
 
 ?>

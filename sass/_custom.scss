@@ -26,8 +26,8 @@ h1,h2,h3,h4,h5,h6 {
 // Blog post titles need to be grey
 .entry-title, .entry-title a, .sidebar-title a {
 	color: $txtColor;
-	
 }
+
 .entry-title, .entry-title a {
 	text-align: right;
 }
@@ -100,8 +100,12 @@ article.type-post {
 }
 
 // Make images in blog posts have a border
-.body-content img {
+.body-content img, li.page_item a img {
 	border: 1.5em solid rgba(252, 252, 252, 1);
+}
+
+.portfolio-contents{
+	padding-top: 20px;
 }
 
 

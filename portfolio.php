@@ -1,7 +1,9 @@
 <?php
 /**
- * Template Name: Hello Page Template
+ * Template Name: Portfolio Page Template
  */
+
+ // *** ESSENTIALLY A CLONE OF HELLO.PHP
 
 get_header(); ?>
 		<!-- Content -->
@@ -16,7 +18,8 @@ get_header(); ?>
 				<header class="row">
 					<div class="twelve columns">
 					<h2 class="sidebar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
-					<h4><?php the_title(); ?></h4>
+					<h4 class="sidebar-title"><a href="<?php echo esc_url( home_url( '/portfolio' ) );?>" title="Return to Portfolio">Portfolio</a></h4>
+					<h5><?php the_title(); ?></h5>
 				</div>
 				</header>
 				<!-- End Header-->
@@ -33,8 +36,7 @@ get_header(); ?>
 						<p>&copy; 2013 Katharine Turner</p>
 				</div>
 			</footer>
-
-
+			
 	<?php wp_footer(); ?>
 	</body>
 	</html>
