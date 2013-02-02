@@ -10,7 +10,9 @@
 			<?php _e( 'Featured post', 'kittysite' ); ?>
 		</div>
 		<?php endif; ?>
-		<header class="entry-header row">
+		
+		<!-- Header for standard view-->
+		<header class="entry-header row hide-for-small">
 			<div class="six columns">
 				<h4 class="entry-date"><?php the_time('l jS F, Y') ?></h4>
 			</div>
@@ -23,6 +25,26 @@
 			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'kittysite' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h4>
 			<?php endif; // is_single() ?>
+			</div>
+		</header>
+		<!-- Header for mobile view  -->
+		<header class="entry-header show-for-small">
+			<div class="row">
+				<div class="twelve columns">
+					<?php the_post_thumbnail(); ?>
+					<?php if ( is_single() ) : ?>
+						<h4 class="entry-title frontandcenter"><?php the_title(); ?></h4>
+					<?php else : ?>
+						<h4 class="entry-title frontandcenter">
+							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'kittysite' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+						</h4>
+					<?php endif; // is_single() ?>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h5 class="entry-date frontandcenter"><?php the_time('l jS F, Y') ?></h5>
+				</div>
 			</div>
 		</header>
 
