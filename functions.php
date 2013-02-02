@@ -110,4 +110,35 @@ function kittysite_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'kittysite_widgets_init' );
+
+/**
+*
+* shortcode handler for columnization posts
+* ex: [leftcol]content here...[/leftcol]
+* Requires <?php remove_filter ('the_content', 'wpautop'); ?>
+* in the page templates you want it work in
+*/
+function shortcode_columnize_left( $atts, $content = null ) {
+	$content = wptexturize( $content );
+	$content = wpautop( $content, false );
+	$content = '<div class="four columns">' . $content . '</div>';
+	return $content;
+}
+function shortcode_columnize_middle( $atts, $content = null ) {
+	$content = wptexturize( $content );
+	$content = wpautop( $content, false );
+	$content = '<div class="four columns">' . $content . '</div>';
+	return $content;
+}
+function shortcode_columnize_right( $atts, $content = null ) {
+	$content = wptexturize( $content );
+	$content = wpautop( $content, false );
+	$content = '<div class="four columns">' . $content . '</div>';
+	return $content;
+}
+add_shortcode( 'leftcol', 'shortcode_columnize_left' );
+add_shortcode( 'midcol', 'shortcode_columnize_middle' );
+add_shortcode( 'rightcol', 'shortcode_columnize_right' );
+
+
 ?>

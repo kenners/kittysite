@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6 {
 	color: $txtColor;
 }
 
-.contents-titles a:hover {
+.contents-titles a:hover, .sidebar-title a:hover {
 	color: $headerFontColor;
 }
 
@@ -55,7 +55,7 @@ article.type-post {
 }
 
 // Make the archives sidebar widget good
-.FlexoArchives_widget_archives ul, li {
+.FlexoArchives_widget_archives ul, .FlexoArchives_widget_archives li {
 	font-family: $headerFontFamily;
 	font-weight: $headerFontWeight;
 	font-style: italic;
@@ -72,7 +72,20 @@ article.type-post {
 
 .flexo-link {
 	color: $txtColor;
-}// Zurb Icons
+}
+
+.body-content h4,
+.body-content h5,
+.body-content h6 {
+	color: $txtColor;
+}
+
+.body-content li {
+	padding-bottom: 0.5em;
+	// Prefer 0.2em
+	list-style-type: none;
+}
+// Zurb Icons
 $fontFileName: "fonts/general_foundicons";
 $fontName: "GeneralFoundicons";
 $classPrefix: "general-foundicon-";

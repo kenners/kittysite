@@ -26,11 +26,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
-	<!-- Header -->
-	<header class="row" role="banner">
-	</header>
-	<!-- End Header-->
-	
+		
 	<!-- Content and Sidebar -->
 	<div id="main" class="row top-spacing">
