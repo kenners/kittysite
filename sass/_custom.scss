@@ -1,0 +1,61 @@
+// Custom CSS for Kittysite
+
+// Make the main wrapper spaced further down the page
+.row.top-spacing {
+	margin: 50px auto 10px !important;
+}
+
+// Make all headings uppercase
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+}
+
+// Blog post titles need to be grey
+.entry-title, .entry-title a, .sidebar-title a {
+	color: $txtColor;
+	
+}
+.entry-title, .entry-title a {
+	text-align: right;
+}
+
+.entry-date {
+	font-style: italic;
+	text-transform: none;
+	color: $txtColor;
+}
+
+.sidebar-subtitle {
+	text-transform: none;
+	color: $txtColor;
+}
+
+
+// Set the blog post backgrounds to white
+article.type-post {
+	background: #f0f0f0;
+	//padding: 10px 25px 25px 25px;
+	padding: 0.625em 1.5em 1.5em 1.5em;
+	border: 1px solid #bebebe;
+	margin-bottom: 2.5em;
+}
+
+// Make the archives sidebar widget good
+.FlexoArchives_widget_archives ul, li {
+	font-family: $headerFontFamily;
+	font-weight: $headerFontWeight;
+	font-style: italic;
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+	font-size: ms(1);
+}
+@media only screen and (max-width: 767px) { 
+	.widget-title, .FlexoArchives_widget_archives ul, li {
+		text-align: center;
+	}
+}
+
+.flexo-link {
+	color: $txtColor;
+}
