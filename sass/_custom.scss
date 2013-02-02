@@ -47,10 +47,11 @@ h1,h2,h3,h4,h5,h6 {
 
 // Set the blog post backgrounds to white
 article.type-post {
-	background: #f0f0f0;
+	//background: #f0f0f0;
+	background: $white;
 	//padding: 10px 25px 25px 25px;
 	padding: 0.625em 1.5em 1.5em 1.5em;
-	border: 1px solid #bebebe;
+	//border: 1px solid #bebebe;
 	margin-bottom: 2.5em;
 }
 
@@ -87,7 +88,7 @@ article.type-post {
 }
 
 // Make images in blog posts have a border
-article .post img, .body-content img {
+.body-content img {
 	border: 1.5em solid rgba(252, 252, 252, 1);
 }
 
