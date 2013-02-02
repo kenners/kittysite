@@ -85,6 +85,13 @@ article.type-post {
 	// Prefer 0.2em
 	list-style-type: none;
 }
+
+// Make images in blog posts have a border
+article .post img, .body-content img {
+	border: 1.5em solid rgba(252, 252, 252, 1);
+}
+
+
 // Zurb Icons
 $fontFileName: "fonts/general_foundicons";
 $fontName: "GeneralFoundicons";
