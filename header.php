@@ -26,6 +26,4 @@
 </head>
 
 <body <?php body_class(); ?>>
-		
-	<!-- Content and Sidebar -->
-	<div id="main" class="row top-spacing">
+	

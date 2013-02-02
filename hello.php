@@ -4,6 +4,8 @@
  */
 
 get_header(); ?>
+		<!-- Content -->
+		<div id="main" class="top-spacing">
 			<?php
 			// Switch off auto paragraph tags.
 			// This makes the shortcode columns work

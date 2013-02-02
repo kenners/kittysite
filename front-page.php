@@ -5,7 +5,8 @@
 
 get_header(); ?>
 
-		<!-- Content -->
+	<!-- Content -->
+	<div id="main" class="top-spacing">
 		<div id="content" class="nine columns centered" role="content">
 			<?php while ( have_posts() ) : the_post(); ?>
 

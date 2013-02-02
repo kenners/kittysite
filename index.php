@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-
+	<!-- Content -->
+	<div id="main" class="row top-spacing">
 		<!-- Sidebar -->
 		<aside class="four columns">
 			<header>
