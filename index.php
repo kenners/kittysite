@@ -6,7 +6,7 @@
 				<h2 class="sidebar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
 				
 					<img src="<?php echo get_template_directory_uri(); ?>/images/blog.svg" alt="Logo for Katharine Turner's blog">
-					<h4 class="sidebar-subtitle">Sketches, thoughts and ideas</h4>
+					<h5 class="sidebar-subtitle">Sketches, thoughts &amp; ideas</h4>
 			</header>
 			<?php get_sidebar(); ?>
 		</aside>

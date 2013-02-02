@@ -10,6 +10,15 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 }
 
+.site-title {
+	text-align: center;
+}
+
+.contents-titles, .contents-titles a {
+	padding-top: 3em;
+	color: $txtColor;
+}
+
 // Blog post titles need to be grey
 .entry-title, .entry-title a, .sidebar-title a {
 	color: $txtColor;
@@ -28,6 +37,8 @@ h1,h2,h3,h4,h5,h6 {
 .sidebar-subtitle {
 	text-transform: none;
 	color: $txtColor;
+	margin-top: -1.2em;
+	letter-spacing: -0.05em
 }
 
 
