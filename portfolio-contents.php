@@ -31,7 +31,7 @@ get_header(); ?>
 							$thumb = get_the_post_thumbnail( $value->ID, array(100,100), $attr = '' );
 							$output .= "<li class=\"page_item\">";
 							$output .= "<a href=\"" . $value->post_name . "\" >" . $thumb . "</a><br />";
-							$output .= "<h6><a href=\"" . $value->post_name . "\" >" .  $value->post_title . "</a></h6>";
+							$output .= "<h6 class=\"contents-titles\"><a href=\"" . $value->post_name . "\" >" .  $value->post_title . "</a></h6>";
 							$output .= "</li>";
 						} 
 					?>
