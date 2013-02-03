@@ -112,6 +112,17 @@ article.type-post {
 	text-align: justify;
 }
 
+.nav-next {
+	text-align: right;
+}
+
+.nav-previous {
+	text-align: left;
+}
+
+img#wpstats {
+display: none;
+}
 
 // Zurb Icons
 $fontFileName: "fonts/general_foundicons";

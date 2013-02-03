@@ -151,4 +151,24 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails', array( 'page' ) );
 	set_post_thumbnail_size( 200, 200 );
 }
+
+if ( ! function_exists( 'kittysite_content_nav' ) ) :
+/**
+ * Displays navigation to next/previous pages when applicable.
+
+ */
+function kittysite_content_nav( $html_id ) {
+	global $wp_query;
+
+	$html_id = esc_attr( $html_id );
+
+	if ( $wp_query->max_num_pages > 1 ) : ?>
+		<nav id="<?php echo $html_id; ?>" class="navigation row" role="navigation">
+					<div class="nav-previous sidebar-title six columns"><h6><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'kittysite' ) ); ?></h6></div>
+					<div class="nav-next sidebar-title six columns"><h6><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'kittysite' ) ); ?></h6></div>
+		</nav><!-- #<?php echo $html_id; ?> .navigation -->
+	<?php endif;
+}
+endif;
+
 ?>
