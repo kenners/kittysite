@@ -108,6 +108,10 @@ article.type-post {
 	padding-top: 20px;
 }
 
+.entry-content p, .body-content p {
+	text-align: justify;
+}
+
 
 // Zurb Icons
 $fontFileName: "fonts/general_foundicons";
