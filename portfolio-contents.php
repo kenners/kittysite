@@ -6,7 +6,7 @@
 get_header(); ?>
 
 	<!-- Content -->
-	<div id="main" class="top-spacing">
+	<div id="main" class="top-spacing row">
 		<div id="content" class="nine columns centered" role="content">
 			<h2 class="site-title sidebar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
 			<h4 class="site-title">Portfolio</h4>
