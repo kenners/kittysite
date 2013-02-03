@@ -147,4 +147,8 @@ add_shortcode( 'midcol', 'shortcode_columnize_middle' );
 add_shortcode( 'rightcol', 'shortcode_columnize_right' );
 add_shortcode( 'doublecol', 'shortcode_columnize_doublecol' );
 
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails', array( 'page' ) );
+	set_post_thumbnail_size( 200, 200 );
+}
 ?>
