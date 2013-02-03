@@ -10,7 +10,7 @@
 					
 					<div class="row">
 						<div class="eight columns">
-							<h5 class="sidebar-subtitle">Sketches, thoughts and ideas</h5>
+							<h5 class="sidebar-subtitle">Sketches, thoughts, ideas</h5>
 						</div>
 					</div>
 			</header>
