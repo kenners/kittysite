@@ -22,7 +22,7 @@ get_header(); ?>
 						'title_li'     => '',
 						'depth'			=> 0,
 						'sort_order'	=> 'DESC',
-						'sort_column'	=> 'post_column'
+						'sort_column'	=> 'post_date'
 						);
 
 						$pages = get_pages( $args );
