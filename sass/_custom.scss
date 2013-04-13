@@ -67,8 +67,14 @@ article.type-post {
 	list-style-type: none;
 	padding: 0;
 	margin-left: 0;
-	font-size: ms(1);
+	font-size: $baseFontSize;
+	margin-bottom: 0;
 }
+
+.widget-title {
+	margin-bottom: 0;
+}
+
 @media only screen and (max-width: 767px) {
 	.widget-title, .FlexoArchives_widget_archives ul, li {
 		text-align: center;
