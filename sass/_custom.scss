@@ -67,9 +67,15 @@ article.type-post {
 	list-style-type: none;
 	padding: 0;
 	margin-left: 0;
-	font-size: ms(1);
+	font-size: $baseFontSize;
+	margin-bottom: 0;
 }
-@media only screen and (max-width: 767px) { 
+
+.widget-title {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
 	.widget-title, .FlexoArchives_widget_archives ul, li {
 		text-align: center;
 	}
@@ -84,7 +90,7 @@ article.type-post {
 .body-content h6 {
 	color: $txtColor;
 }
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
 	.body-content h4,
 	.body-content h5,
 	.body-content h6 {
@@ -101,7 +107,7 @@ article.type-post {
 
 // Make images in blog posts have a border
 .body-content img, li.page_item a img {
-	border: 1.5em solid rgba(252, 252, 252, 1);
+	border: 1.5em solid white;
 }
 
 .portfolio-contents{
@@ -122,6 +128,14 @@ article.type-post {
 
 img#wpstats {
 display: none;
+}
+
+.site-icon {
+	padding-top: 2.5em;
+}
+
+.site-icon {
+	padding-top: 1.5em;
 }
 
 // Zurb Icons
