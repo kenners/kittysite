@@ -7,12 +7,12 @@
  */
 ?>
 
-	
+
 	</div>
 	<!-- End Sidebar and Content -->
 	<!-- Sidebar for small screens -->
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div class="show-for-small hide-for-medium hide-for-large-up widget-area row">
+		<div class="show-for-small widget-area row">
 			<?php dynamic_sidebar( 'sidebar-2' ); ?>
 		</div><!-- #secondary -->
 	<?php endif; ?>
@@ -24,7 +24,7 @@
 		</div>
 	</footer>
 
-
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/javascripts/retina.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
